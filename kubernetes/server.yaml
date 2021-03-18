@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: e-commerce-backend-service
+spec:
+  selector:
+    app: e-commerce-server-app
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000  
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: e-commerce-server-app-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: e-commerce-server-app
+  template:
+    metadata:
+      labels:
+        app: e-commerce-server-app
+    spec:
+      containers:
+        - name: server
+          image: e-commerce-server-kubernetes-app:latest
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: MONGODB_CONNECTION_URI
+              value: 'mongodb+srv://karthik:karthik@cluster0.q13ui.mongodb.net/onlineshopping?retryWrites=true&w=majority'
+            # - name: AUTH_API_ADDRESSS
+            #   value: 'e-commerce-client-service.default:80'
+            - name: JWT_KEY
+              value: 'super_secret_dont_share'

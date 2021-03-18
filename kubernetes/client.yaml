@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: e-commerce-client-service
+spec:
+  selector:
+    app: e-commerce-client-app
+  ports:
+  - port: 80
+    targetPort: 80
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: e-commerce-client-app-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: e-commerce-client-app
+  template:
+    metadata:
+      labels:
+        app: e-commerce-client-app
+    spec:
+      containers:
+      - image: e-commerce-client-kubernetes-app:latest
+        name: container1
+        imagePullPolicy: IfNotPresent
+        env:
+          - name: REACT_APP_BACKEND_URL
+            value: 'e-commerce-backend-service.default:5000'

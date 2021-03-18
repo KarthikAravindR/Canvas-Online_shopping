@@ -1,0 +1,117 @@
+version: '3.7'
+
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    image: myapp-server
+    container_name: myapp-node-server
+    command: /usr/src/app/node_modules/.bin/nodemon app.js
+    volumes:
+      - ./server/:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo
+    # env_file: ./server/.env
+    environment:
+      - NODE_ENV=development
+    networks:
+      - app-network
+  mongo:
+    image: mongo
+    volumes:
+      - data-volume:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - app-network
+  client:
+    tty: true
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    image: myapp-client
+    container_name: myapp-react-client
+    command: npm start
+    volumes:
+      - ./client/:/usr/app
+      - /usr/app/node_modules
+    depends_on:
+      - server
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+
+networks:
+    app-network:
+        driver: bridge
+
+volumes:
+    data-volume:
+    node_modules:
+    web-root:
+      driver: local
+# version: '2'
+# services:
+#     ui:
+#         build: ./online-shopping
+#         ports:
+#             - '3000:3000'
+#         depends_on:
+#             - api
+#     api:
+#         build: ./online-shopping-backend
+#         ports:
+#             - '5000:8080'
+#         depends_on:
+#             - mongo
+#     mongo:
+#         image: mongo
+#         ports:
+#             - '27017:27017'
+# version: '2'
+
+# services: 
+#     online-shopping:
+#         image: mhart/alpine-node:6.8.0
+#         restart: always
+#         ports: 
+#             - "3000:3000"
+#         working_dir: /online-shopping/src/app
+#         volumes: 
+#             - ./online-shopping: /client/src/app
+#         entrypoint: ["npm", "start"]
+#         links: 
+#             - api
+#         networks: 
+#             - webappnetwork
+#     online-shopping-backend:
+#         image: webapp-api
+#         restart: always
+#         ports: 
+#             - "9000:9000"
+#         volumes: 
+#             - ./online-shopping-backend: /api
+#             - /api/node_modules
+#         depends_on: 
+#             - mongodb
+#         networks: 
+#             - webappnetwork
+#     mongodb:
+#         image: mongo
+#         restart: always
+#         container_name: mongodb
+#         volumes: 
+#             - ./data-node: /data/db
+#         ports: 
+#             - "27017:27017"
+#         command: mongod --noauth --smallfiles
+#         networks: 
+#             - webappnetwork
+# networks: 
+#     webappnetwork:
+#         driver: bridge
