@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  /* background-color: black; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+/* html {
+  transition: color 300ms, background-color 300ms;
+}
+
+html[data-theme='dark'] {
+  background: #000;
+  filter: invert(1) hue-rotate(180deg)
+}
+
+html[data-theme='dark'] img {
+  filter: invert(1) hue-rotate(180deg)
+} */

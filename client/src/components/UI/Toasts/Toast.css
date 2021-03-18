@@ -1,0 +1,55 @@
+.Toast {
+    position: fixed;
+    display: flex;
+    z-index: 500;
+    background-color: black;
+    color:black;
+    border: 1px solid black;
+    width: 240px;
+    line-height: 40px;
+    height: 72px;
+    box-shadow: 1px 1px 1px black;
+    padding: 16px;
+    right: 7%;
+    color:white;
+    border-radius: 7px;
+    top: 12%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+    font-family: 'Roboto', sans-serif;
+}
+.delete1 {
+    text-align: center;
+    background-color: green;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+/* .addtask1 {
+    display: flex;
+}
+input,textarea {
+    width: 97%;
+    border: 1px solid white;
+    padding: 8px;
+}
+.inputelement {
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+.task {
+    margin-left: 77%;
+    background-color: skyblue;
+    border: 1px solid skyblue;
+    border-radius: 12px;
+    width: 100px;
+    height: 40px;
+} */
+
+@media (min-width: 600px) {
+    .Modal {
+        width: 500px;
+        left: calc(50% - 250px);
+    }
+}

@@ -1,0 +1,341 @@
+.singleproduct{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 90px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.allfiveimages{
+    /* width:60%; */
+    flex: 0 1 52%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* .allfiveimagesbox:hover{
+    transform: scale(1.07);
+    transition: .5s;
+} */
+.allfiveimagesbox {
+    position: relative;
+    border: 1px solid rgb(245, 245, 245);
+    width:50%;
+    /* transition: .5s; */
+}
+.allfiveimagesbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: .5s;
+    bottom: 0;
+}
+.allfiveimagesbox img:hover{
+    height: 103%;
+    transition: .5s;
+}
+.allproductdetails{
+    margin-left: 24px;
+    /* width:50% */
+    flex: 1 1 40%;
+}
+img{
+    width:100%;
+    height: 100%;
+}  
+.allshoetitle{
+    font-size: 2rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 48px 0 0;
+    margin: 8px 8px 2px 0;
+}
+.allshoedescription{
+    color: rgb(128, 126, 126);
+    font-size: 1.4rem;
+    margin: 2px 8px 8px 0;
+}
+.alleveryprice {
+    margin: 32px 8px 0 0;    
+}
+.alldiscountedprice {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    margin: 0 4px  0 0;
+}
+.alloriginalprice{
+    font-size: 1.4rem;
+    color: rgb(104, 102, 102);
+    text-decoration: line-through;
+    margin: 0 4px;
+}
+.alldiscountoffer{
+    font-size: 1.4rem;
+    color: #ff2058;
+    margin: 0 4px;
+}
+.alltaxes{
+    color: teal;
+}
+.allsize {
+    width: 270px;
+    display: flex;
+    margin-top: 16px;
+    justify-content: space-between;
+}
+.allsize p {
+    margin-top: 2px;
+    font-weight: bolder;
+}
+.allsize button {
+    background-color: rgba(0, 128, 128, 0);
+    border: 1px solid rgba(0, 128, 128, 0);
+    color:#ff2058
+}
+.allsizenumber {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+.star2{
+    color:rgb(255, 187, 0);
+}
+.allnotrated{
+    color: rgb(128, 126, 126);
+    font-size: 1.4rem;
+    margin: 2px 8px 8px 0;
+    font-weight: 100;
+}
+.allsizenumberbutton {
+    /* background-color: rgba(0, 128, 128, 0); */
+    border: 1px solid #ccc;
+    font-weight: bolder;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    margin: 0 16px 8px 0;
+    position: relative;
+}
+.allsizenumberbutton:disabled {
+    /* background-color: rgba(0, 128, 128, 0); */
+    color: #d5d6d9;
+    border: 1px solid #d5d6d9;
+    cursor: not-allowed;
+    font-weight: 500;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+}
+.allsizenumberbutton:focus,.allsizenumberbutton:active,.allsizenumberbutton:visited {
+    background-color: #ff2058;
+    outline: rgba(245, 245, 220, 0);
+    border: 1px solid #ff205800;
+    position: relative;
+}
+.allusercontrols{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+.alladdbag{
+    width:260px;
+    height: 60px;
+    border-radius: 7px;
+    background-color: #ff2058;
+    border: 1px solid #ff2058;
+    margin: 0 16px 8px 0;
+}
+.alladdbag1{
+    width:200px;
+    height: 60px;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    background-color: #ff2058;
+    border: 1px solid #ff2058;
+    margin: 0 16px 8px 0;
+}
+.allwishlist{
+    width:210px;
+    height: 60px;
+    border-radius: 7px;
+    /* background-color: #ff205800; */
+    border: 1px solid #ccc
+}
+.alldeliveryoption{
+    margin-top: 32px;
+}
+.alldeliverycheck{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 8px;
+}
+.alldeliverycheck input {
+    margin-right: 16px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    width: 270px;
+    height: 50px;
+}
+.alldeliverycheck button {
+    background-color: #ff2058;
+    border: 1px solid #ff2058;
+    border-radius: 7px;
+    width: 110px;
+    height: 50px;
+}
+.shoerated{
+    color:#ccc;
+    font-size: 1.5rem;
+}
+.allavilability{
+    margin-top: 4px;
+    color: rgb(116, 113, 113);
+}
+.alldefaultdetails{
+    margin-top: 16px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    line-height: 1.7rem;
+    color: rgb(78, 77, 77);
+    border-bottom: 1px solid #ccc;
+}
+.alleveryproductdetails{
+    margin-top: 32px;
+}
+.alldefaultproductdetails{
+    margin-bottom: 16px;
+    font-weight: bolder;
+}
+.alldefaultdesigndetails{
+    margin-top: 8px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+.allspecification{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 64px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+}
+.alldefaultspecification{
+    margin-top: 8px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    width: 100%;
+}
+.allspecificationHeading{
+    color: rgb(114, 110, 110);
+    font-size: 0.8rem;
+    margin-top: 8px;
+}
+.allparticularspecification{
+    width:45%;
+    height: 60px;
+    border-bottom: 1px solid rgb(241, 241, 241);
+}
+.alldefaultproductcodesoldby{
+    margin-top: 32px;
+    font-weight: lighter;
+}
+.fullproductcarousel{
+    display: none;
+}
+@media (max-width: 900px) {
+    .allfiveimages{
+        flex: 0 1 32%;
+    }
+    .allfiveimagesbox{
+        width:100%;
+        height: 400px;
+    }
+}
+@media (max-width: 850px) {
+    
+    .singleproduct{
+        margin-top: 147px;
+        
+    }
+}
+@media (max-width: 760px) {
+    .singleproduct{
+        display: block;
+    }
+    .allfiveimages{
+        display: none;
+    }
+    .allproductdetails{
+        margin-left: 16px;
+    }
+    .fullproductcarousel{
+        display: block;
+        width: 100%;
+    }
+    /* .allsizenumberbutton{
+        width: 35px;
+        height: 35px;
+        margin: 0 4px 0 0;
+    } */
+    .alladdbag{
+        width:190px;
+        height: 60px;
+        margin: 0 16px 8px 0;
+    }
+    .allwishlist{
+        width:130px;
+        height: 60px;
+    }
+    .alldeliverycheck input {
+        margin-right: 16px;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        width: 227px;
+        height: 50px;
+    }
+    .alldeliverycheck button {
+        background-color: #ff2058;
+        border: 1px solid #ff2058;
+        border-radius: 7px;
+        width: 90px;
+        height: 50px;
+    }
+}
+
+.size-buttons-size-strike-hide{width:0;height:0}
+.size-buttons-size-strike-show{
+    position:absolute;
+    top:50%;left:0;
+    width:100%;
+    height:1px;
+    background-color:#d5d6d9;
+    -webkit-transform:rotate(-45deg);
+    transform:rotate(-45deg)}
+    
+element.style {
+    bottom: -1px;
+}
+.buttonwrap{
+    position: relative;
+}
+.size-buttons-inventory-left {
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    width: 70%;
+    left: 5%;
+    background-color: #fd8447;
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+}

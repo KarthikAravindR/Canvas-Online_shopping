@@ -1,0 +1,152 @@
+.addressbreadcrumbs{
+    width:100%;
+    height: 50px;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 100px;
+    border-bottom: 1px solid rgb(235, 234, 234);
+}
+.address{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    margin-top: 11px;
+}
+.useraddress{
+    width:65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.payment{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+.paymentbutton{
+    border: 1px solid rgb(219, 218, 218);
+    font-weight: bolder;
+    width: 250px;
+    height: 30px;
+    margin: 8px auto;
+    border-radius: 27px;
+}
+.paymentbutton:focus,.paymentbutton:active,.paymentbutton:visited {
+    background-color: #ff2058;
+    color: white;
+    outline: rgba(245, 245, 220, 0);
+    border: 1px solid #ff205800;
+}
+.addressorder{
+    margin-left: 24px;
+    width:35%;
+    margin-top: 10px;
+}
+.addressordertotal{
+    display: flex;
+    width: 100%;
+    padding:12px;
+    border: 1px solid rgb(248, 248, 248);
+    font-size: 0.9rem;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+.addressordertotalprice{
+    display: flex;
+    width: 100%;
+    padding:16px 12px;
+    font-size: 0.9rem;
+    border: 1px solid rgb(233, 230, 230);
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.addressorder button{
+    width:100%;
+    height: 60px;
+    border-radius: 7px;
+    margin-top: 16px;
+    background-color: #ff2058;
+    border: 1px solid #ff2058;
+    margin-right: 16px;
+}
+.Contactdata {
+    margin: auto;
+    border: 1px solid rgb(235, 232, 232);
+    width: 100%;
+    padding: 16px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+    border-radius: 7px;
+}
+
+.Contactdata .Input {
+    display: block;
+    border: 1px solid rgb(235, 232, 232);
+    margin: 10px auto;
+}
+
+.Button {
+    border: none;
+    border: 1px solid white;
+    border-radius: 7px;
+    color: green;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+/* .Button:first-of-type {
+    margin-left: 0;
+    padding-left: 0;
+} */
+.Button:disabled {
+    cursor: not-allowed;
+    color:#ccc;
+}
+@media (max-width: 1150px) {
+    .address{
+        width: 80%;
+    }
+}
+@media (max-width: 950px) {
+    .address{
+        width: 97%;
+    }
+}
+@media (max-width: 850px) {
+    .address{
+        margin-top: 150px;
+    }
+}
+@media (max-width: 750px) {
+    .addressbreadcrumbs{
+        display: none;
+    }
+    .address{
+        display: block;
+    }
+    .useraddress{
+        width:80%;
+        margin: 81px auto 0 auto;
+    }
+    .addressorder{
+        margin-left: 0;
+        width:80%;
+        margin: 10px auto 10px auto;
+    }
+}
+@media (max-width: 500px) {
+    .useraddress{
+        width:97%;
+    }
+    .addressorder{
+        width:97%;
+    }
+}

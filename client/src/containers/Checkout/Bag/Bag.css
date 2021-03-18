@@ -1,0 +1,316 @@
+.bagtoolbar{
+    width: 60%;
+    margin: 81px auto 0 auto;
+    height: 80px;
+    display: flex;
+}
+.outer {
+  overflow: hidden;
+  width: 35%;
+  margin-left: 24px;
+  height: 100%;
+}
+.inner {
+    height: 100%;
+}
+.inner i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.inner .top {
+  margin-top: -20px;
+}
+.inner .bottom {
+  margin-top: -20px;
+  margin-bottom: -22px;
+}
+.inner .left {
+  float: left;
+  margin-left: -20px;
+}
+.inner .right {
+  float: right;
+  margin-right: -20px;
+}
+.content {
+  min-height: 80px;
+}
+.bagbreadcrumbs{
+    width:65%;
+    height: 100%;
+    text-align: center;
+    line-height: 80px;
+}
+.bagsecurity{
+    height: 100%;
+    width:100%;
+    background-color: rgb(0, 184, 0);
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    border: 1px solid rgb(236, 235, 235);
+    border-radius: 12px;
+    /* top:-12px */
+}
+.bag{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    margin-top: 11px;
+}
+.bagdetails{
+    width:65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.bagorder{
+    margin-left: 24px;
+    width:35%
+}
+.bagavailableoffers{
+    border: 1px solid rgb(236, 235, 235);
+    padding:16px;
+    box-sizing: border-box;
+    line-height: 30px;
+    width: 100%;
+    margin-bottom: 24px;
+    border-radius: 2px;
+}
+.bagavailableoffers p{
+    font-size: 0.9rem;
+    color: rgb(78, 75, 75)
+}
+.bagfreedelivery{
+    border-radius: 2px;
+    border: 1px solid rgb(240, 237, 237);
+    padding:16px;
+    color: rgb(78, 75, 75);
+    box-sizing: border-box;
+    width: 100%;
+}
+.bagitemprice{
+    display: flex;
+    width: 100%;
+    padding:16px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.bageveryproducts{
+    width: 100%;
+    border: 1px solid rgb(202, 201, 201);
+    min-height: 140px;
+    margin-bottom: 16px;
+    position: relative;
+}
+.bagproductdetail{
+    display: flex;
+    width: 100%;
+    height: 75%;
+}
+.bagproductimage{
+    width:30%;
+    height: 100%;
+}
+.bagparticularproductdetails{
+    width: 70%;
+    height: 100%;
+}
+.bagremovewishlist{
+    display: flex;
+    width: 100%;
+    height: 25%;
+    line-height: 10px;
+}
+.bagparticularproductdetails{
+    margin-left: 24px;
+}
+.bagnameandprice{
+    display:flex;
+    width:100%
+}
+.bagnamedessold{
+    width: 70%;
+}
+.bagparticulardiscountedprice{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 0 4px  0 0;
+}
+.bagparticularoriginalprice{
+    font-size: 1rem;
+    color: rgb(104, 102, 102);
+    text-decoration: line-through;
+    margin: 0 4px;
+}
+.bagparticulardiscountoffer{
+    font-size: 1rem;
+    color: #ff2058;
+    margin: 0 4px 0 32px;
+}
+.bagparticularsize{
+    margin-top:16px
+}
+.bagremovewishlist{
+    padding: 8px;
+    box-sizing: border-box;
+    height: 50px;
+}
+.bagremovebutton{
+    width:33%;
+    background-color: #ff205800;
+    color: rgb(78, 75, 75);
+    border: 1px solid rgba(204, 204, 204, 0);
+    border-right: 2px solid rgb(212, 212, 212);
+}
+.bagwishlistbutton{
+    width:70%;
+    color: rgb(78, 75, 75);
+    background-color: #ff205800;
+    border: 1px solid rgba(204, 204, 204, 0);
+    border-left: 2px solid rgb(212, 212, 212);
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ORDER */
+
+.bagordereachprice{
+    display: flex;
+    width: 100%;
+    padding:12px;
+    border: 1px solid rgb(248, 248, 248);
+    font-size: 0.9rem;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+.bagordereachpricetotal{
+    display: flex;
+    width: 100%;
+    padding:16px 12px;
+    font-size: 0.9rem;
+    border: 1px solid rgb(233, 230, 230);
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.bagorder button{
+    width:100%;
+    height: 60px;
+    border-radius: 7px;
+    margin-top: 16px;
+    background-color: #ff2058;
+    border: 1px solid #ff2058;
+    margin-right: 16px;
+}
+.bagempty{
+    width: 50%;
+    height: 100vh;
+    line-height: 50px;
+    padding-top: 210px;
+    box-sizing: border-box;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+.bagoutofstock{
+    width: 100%;
+    height:72%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.459);
+    color: #ff0040;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 140px;
+}
+@media (max-width: 1050px) {
+    .bagtoolbar{
+        width: 80%;
+    }
+    .bag{
+        width: 80%;
+    }
+    .bagbreadcrumbs{
+        width:70%;
+    }
+    .outer{
+        width: 30%;
+    }
+    .bagdetails{
+        width:70%;
+    }
+    .bagorder{
+        width:30%
+    }
+}
+@media (max-width: 850px) {
+    .bagtoolbar{
+        width: 97%;
+    }
+    .bag{
+        width: 97%;
+        margin-top: 150px;
+    }
+    .bagbreadcrumbs{
+        width:70%;
+    }
+    .outer{
+        width: 30%;
+    }
+    .bagdetails{
+        width:70%;
+    }
+    .bagorder{
+        width:30%
+    }
+}
+@media (max-width: 750px) {
+    .bagtoolbar{
+        display:none
+    }
+    .bag{
+        width: 97%;
+        margin-top: 150px;
+        display: block;
+    }
+    .bagdetails{
+        width:90%;
+        margin:auto ;
+    }
+    .bagorder{
+        width:90%;
+        margin:auto ;
+    }
+    .bagoutofstock{
+        font-size: 1.7rem;
+        padding-top: 140px;
+    }
+}
+@media (max-width: 500px) {
+    .bagnamedessold p{
+        font-size: 0.5rem;
+    }
+    .bagparticulardiscountedprice{
+        font-size: .7rem;
+    }
+    .bagparticularoriginalprice{
+        font-size: .7rem;
+    }
+    .bagparticulardiscountoffer{
+        font-size: .5rem;
+    }
+    .bagoutofstock{
+        font-size: 1rem;
+        padding-top: 100px;
+    }
+    /* .bagdetails{
+        height: 
+        450px;
+    } */
+}

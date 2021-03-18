@@ -1,0 +1,279 @@
+
+.singleforders{
+    width: 50%;    
+    margin: 110px auto 700px auto;
+    font-family: 'Roboto', sans-serif;
+}
+.everyforders{
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid rgb(224, 223, 223);
+    padding: 8px;
+    box-shadow: 0 1px 2px 0 rgba(170, 169, 169, 0.227), 0 6px 20px 0 rgba(170, 169, 169, 0.227);
+    display: flex;
+    margin-bottom: 16px;
+}
+.myordersproductsandprices{
+    width: 70%;
+}
+.myorders{
+    
+    min-height: 100px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+.myordersproducts{
+    width: 70%;
+}
+.allordersallproducts{    
+    height: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    width: 130%;
+    
+}
+.ordersuserdata{
+    height: 100%;
+    font-size: .7vw;
+    padding: 8px;
+    width: 30%;
+    margin-bottom: 20px;
+}
+.myorderseveryproducts{
+    height: 100%;
+    margin-bottom: 8px;
+    
+}
+.myordersproductdetail_Delivered{
+    margin: 8px 0;
+    width: 100%;
+    height: max-content;
+    border: 1px solid #00000077;
+}
+.myordersproductdetail{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 8px 8px;
+    box-sizing: border-box;
+    border: 1px solid #fdb6c877;
+}
+.myordersproductimage{
+    width:12%;
+    height: 100%;
+}
+.myordersparticularproductdetails{
+    width: 100%;
+    height: 100%;
+}
+.myordersremovewishlist{
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+.myordersparticularproductdetails{
+    margin-left: 24px;
+}
+.myordersnameandprice{
+    display:flex;
+    width:100%;
+    height: 100%;
+    justify-content: space-between;
+}
+.myordersnamedessold{
+    width: 70%;
+    height: 100%;
+    line-height: 100%;
+}
+.myordersparticularprice{
+    text-align: right;
+    height: 100%;
+    margin-right: 10px;
+}
+.myordersparticulardiscountedprice{
+    font-size: .9vw;
+    font-weight: bolder;
+}
+.myordersparticularoriginalprice{
+    font-size: .7vw;
+    color: rgb(104, 102, 102);
+    text-decoration: line-through;
+    margin: 0 4px;
+}
+.myordersparticulardiscountoffer{
+    font-size: 1rem;
+    color: #ff2058;
+    margin: 0 4px 0 32px;
+}
+.myordersparticularsize{
+    /* margin-top:17px; */
+    font-size: .7vw;
+}
+.myordersremovewishlist{
+    padding: 16px;
+    box-sizing: border-box;
+    height: 50px;
+}
+.myordersremovebutton{
+    width:33%;
+    background-color: #ff205800;
+    color: rgb(78, 75, 75);
+    border: 1px solid rgba(204, 204, 204, 0);
+    border-right: 2px solid rgb(179, 177, 177);
+}
+.myorderswishlistbutton{
+    width:70%;
+    color: rgb(78, 75, 75);
+    background-color: #ff205800;
+    border: 1px solid rgba(204, 204, 204, 0);
+    border-left: 2px solid rgb(179, 177, 177);
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.allordersaddressdetails{
+    border: 1px solid rgb(240, 237, 237);
+    min-height: 100px;
+    padding: 8px;
+    width: 40%;
+}
+.allordersaddressdet{
+    border: 1px solid #bfd4fc;
+    width: 100%;
+    margin:8px 0;
+    padding: 8px;
+    font-size: .8vw;
+    box-sizing: border-box;
+    text-align: left;
+    height: 50%;
+    border-radius: 7px;
+}
+.allorderseachprice{
+    display: flex;
+    width: 100%;
+    padding:12px;
+    border: 1px solid rgb(248, 248, 248);
+    font-size: 0.9rem;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+.orderproductsname{
+    font-size: 1.1vw;
+    margin: 4px 0;
+}
+.orderproductsdescription{
+    font-size: .9vw;
+}
+
+.orderempty{
+    width: 50%;
+    height: 90vh;
+    line-height: 50px;
+    padding-top: 110px;
+    box-sizing: border-box;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+
+.myorderstotal{
+    width: 100%;
+    display: flex;
+    margin-top: 8px;
+    font-size: 1.1vw;
+    padding: 8px;
+    height: 20%;
+    /* border:1px solid rgb(245, 245, 247); */
+    line-height: 100%;
+    justify-content: space-between;
+}
+.productrating{
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    /* justify-content: space-around; */
+}
+.productrating p{
+    font-size: .8rem;
+    font-family: fantasy;
+    margin-right: 8px;
+    margin-top: 2px;
+}
+.productrating button{
+    background-color: #ff2058;
+    border: 1px solid #ff2058;
+    border-radius: 7px;
+    margin-left: auto;
+    font-size: .8rem;
+    color: white;
+    /* width: 110px;
+    height: 50px; */
+}
+@media (max-width: 1150px) {
+    .singleforders{
+        width: 50%;    
+    }
+}
+@media (max-width: 950px) {
+    .singleforders{
+        width: 80%; 
+        margin: 140px auto 700px auto;   
+    }
+}
+@media (max-width: 750px) {
+    .singleforders{
+        width: 80%;    
+    }
+    .allorderseachprice{
+        font-size: 1.4rem;
+    }
+    .ordersuserdata{
+        font-size: 2vw;
+    }
+    .allordersaddressdet{
+        font-size: 1.7vw;
+    }
+    .orderproductsname{
+        font-size: 2vw;
+        margin: 0;
+    }
+    .orderproductsdescription{
+        font-size: 1.7vw;
+    }
+    .myordersparticularsize{
+        /* margin-top:17px; */
+        font-size: 2vw;
+    }
+    .myordersparticulardiscountedprice{
+        font-size: 1.7vw;
+        font-weight: bolder;
+    }
+    .myorderstotal{
+        font-size: 2vw;
+    }
+}
+@media (max-width: 500px) {
+    .singleforders{
+        width: 97%;    
+    }
+    .orderproductsname{
+        font-size: 3vw;
+    }
+    .orderproductsdescription{
+        font-size: 2.7vw;
+    }
+    .myordersparticularsize{
+        /* margin-top:17px; */
+        font-size: 3vw;
+    }
+    .myordersparticulardiscountedprice{
+        font-size: 2.7vw;
+        font-weight: bolder;
+    }
+    .myorderstotal{
+        font-size: 3vw;
+    }
+}

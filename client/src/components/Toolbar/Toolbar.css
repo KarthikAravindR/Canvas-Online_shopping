@@ -1,0 +1,179 @@
+.Toolbarcontainer{
+    height: max-content;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    padding: 0 16px;
+    box-sizing: border-box;
+    /* border: 1px solid #ccc; */
+    top: 0;
+    left: 0;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid rgb(241, 240, 240) !important;
+}
+.headertodo {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* box-shadow: 0 4px 8px 0 rgba(170, 169, 169, 0.2), 0 6px 20px 0 rgba(170, 169, 169, 0.2); */
+}
+
+Link {
+    text-decoration: none;
+}
+.badge1 {
+    position:relative;
+ }
+ .badge1[data-badge]:after {
+    content:attr(data-badge);
+    position:absolute;
+    top:-7px;
+    right:7px;
+    font-size:.7em;
+    background:#ff2058;
+    color:white;
+    width:18px;height:18px;
+    text-align:center;
+    line-height:18px;
+    border-radius:50%;
+    border: 1px solid #ff2058;
+ }
+.badge2 {
+    position:relative;
+ }
+ .badge2[data-badge]:after {
+    content:attr(data-badge);
+    position:absolute;
+    top:-7px;
+    right:-7px;
+    font-size:.7em;
+    background:#ff2058;
+    border: 1px solid #ff2058;
+    color:white;
+    width:18px;height:18px;
+    text-align:center;
+    line-height:18px;
+    border-radius:50%;
+ }
+.dropdown-menu{
+    width: 250px;
+    margin-top: 10px;
+    margin-left: auto;
+}
+.dropdown-item:hover{
+    background-color: #ff2058 !important;
+    color: white !important;
+}
+.usernamewelcome{
+    padding: 10px 0 0 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+.usernamewelcome button{
+    width:120px;
+    height: 40px;
+    border-radius: 7px;
+    margin-top: 8px;
+    background-color: #ff2058;
+    border: 1px solid #ff2058;
+    margin-right: 16px;
+}
+.usernamewelcome button:focus,.usernamewelcome button:active,.usernamewelcome button:hover {
+    background-color: #ff2058;
+    outline: rgba(245, 245, 220, 0);
+    border: 1px solid #ff205800;
+}
+.phonecompanies{
+    display: flex;
+    width: 300px;
+    font-size: 1.2rem;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    justify-content: space-between;
+}
+.profileandbag {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+.eachprofileandbag{
+    display: block;
+    height: 70px;
+    text-align: center;
+    padding-top: 12px;
+    text-decoration: none;
+}
+.eachprofileandbag1{
+    display: block;
+    height: 100%;
+    text-align: center;
+    z-index: 10000;
+    padding-top: 12px;
+    text-decoration: none;
+}
+.btn.btn-primary,.btn.btn-primary:hover,.btn.btn-primary:active{
+    /* margin-top: 5px; */
+    background-color: white !important;
+    border: 1px solid white !important;
+    color: black;
+}
+.dropdown-menu.show {
+    z-index: 10000000 !important;
+}
+.dropdown-item {
+    height: 30px;
+}
+.toolbarTitle,.toolbarTitle:hover {
+    line-height: 70px;
+    font-size: 1.7rem;
+    width: 170px;
+    text-decoration: none;
+}
+
+.Toolbar nav {
+    height: 100%;
+}
+
+.Logo{
+    height: 80%;
+}
+
+.DesktopSearch{
+    width: 50%;
+}
+.mobileSearch{
+    width: 100%;
+    display: none;
+    margin-bottom: 16px;
+    /* margin-top: 70px;
+    position: fixed; */
+}
+
+@media (max-width:499px){
+    .Desktoponly {
+        display: none;
+    }
+}
+@media (max-width:650px){
+    .phonecompanies,.eachprofileandbag{
+        display: none;
+    }
+    .eachprofileandbag1{
+        padding-top: 0;  
+    }
+    .profileandbag {
+        width: 70px;
+    }
+}
+@media (max-width:850px){
+    .mobileSearch{
+        display: block;
+    }
+    .DesktopSearch{
+        display: none;
+    }
+}

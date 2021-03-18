@@ -1,0 +1,9 @@
+{
+    "env": {
+        "DB_USER": "karthik",
+        "DB_PASSWORD": "karthik",
+        "DB_NAME": "onlineshopping",
+        "JWT_KEY": "super_secret_dont_share",
+        "MONGODB_CONNECTION_URI": "mongodb+srv://karthik:karthik@cluster0.q13ui.mongodb.net/onlineshopping?retryWrites=true&w=majority"
+    }
+}

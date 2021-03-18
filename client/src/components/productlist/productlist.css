@@ -1,0 +1,203 @@
+.EveryProductsandfilters{
+    width: 100%;
+    display: flex;
+    /* align-items: stretch; */
+    
+    /* flex-wrap: wrap; */
+    min-height: 600px;
+    margin-top: 70px;
+    margin-bottom: 690px;
+    font-family: 'Roboto', sans-serif;
+}
+.productsfilter{
+    top:70px;
+    bottom: 0;
+    position: fixed;
+    z-index: 1000000;
+    width: 18%;
+    border-right: 1px solid rgb(241, 240, 240);
+    overflow-y: scroll;
+    /* border: 1px solid rgb(248, 247, 247); */
+}
+.productsfilter::-webkit-scrollbar {
+    width: 1px;   
+    height: 1px;            /* width of the entire scrollbar */
+}
+.productsfilter::-webkit-scrollbar-track {
+    background: #ff20584d;        /* color of the tracking area */
+}
+.productsfilter::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 255, 0);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #ff20584d;  /* creates padding around scroll thumb */
+}
+.productlist1 {
+    width:82%;
+    margin-left: 18%;
+    display:flex;
+    flex-wrap: wrap;
+    /* overflow-y: 'auto'; */
+    font-family: 'Roboto', sans-serif;
+}
+.productlistfreeshiping{
+    /* margin-top: 70px; */
+    width: 100%;
+    line-height: 35px;
+    height: 35px;
+    color: white;
+    background-color: #FF3E6C;
+    text-align: center;
+}
+.Filterheading{
+    display: flex;
+    justify-content: space-between;
+    padding:8px 8px 0 16px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(248, 247, 247);
+}
+.clearfilterbutton {
+    background-color: rgba(0, 128, 128, 0);
+    border: 1px solid rgba(0, 128, 128, 0);
+    color:#ff2058
+}
+.mobilefilterbutton{
+    display: none;
+    background-color: rgba(0, 128, 128, 0);
+    border: 1px solid rgba(0, 128, 128, 0);
+    background-color:#ff2058;
+    color: white;
+    width: 170px;
+    height: 40px;
+}
+.BrandsFilter{
+    width: 100%;
+    
+    padding: 4px 8px 0 16px;
+    box-sizing: border-box;
+}
+.BrandsFilter p {
+    padding: 8px 0;
+}
+.everyfilter{
+    width: 100%;
+}
+.everyfilter label{
+    margin-left: 8px;
+    font-size: .9rem;
+}
+.colorindicator{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-left: 16px;
+    border-radius: 100px;
+}
+.colorindicator.White {
+    background-color: white;
+    border: 1px solid rgb(182, 181, 181)
+}
+.colorindicator.Black {
+    background-color: black;
+    border: 1px solid rgb(175, 174, 174)
+}
+.colorindicator.Red {
+    background-color: red;
+    border: 1px solid red
+}
+.colorindicator.Blue {
+    background-color: blue;
+    border: 1px solid blue
+}
+.colorindicator.Green {
+    background-color: green;
+    border: 1px solid green
+}
+.colorindicator.Grey {
+    background-color: gray;
+    border: 1px solid gray
+}
+.backtotop{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0 10px 10px 0;
+    color: white;
+    padding: 7px 15px ;
+    /* font-size: 1.7rem; */
+    border-radius: 100px;
+    background-color: #b6b4b5;
+}
+.arrow {
+    color: black;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+@media (max-width: 850px) {
+    
+    .EveryProductsandfilters{
+        margin-top: 127px;
+        
+    }
+    .productsfilter{
+        top:127px
+    }
+}
+@media (max-width: 600px) {
+    .EveryProductsandfilters{
+        flex-direction: column;
+        
+    }
+    .BrandsFilter{
+        display: none;
+        
+    }
+    .allthreefilters{
+        display: block;
+        height: max-content;
+        background-color: white;
+        overflow: hidden;
+        color: black;
+    }
+    .BrandsFilter.filtershoe{
+        display: block;
+        height: max-content;
+        background-color: white;
+        color: black;
+        /* overflow-y: scroll; */
+        /* padding: 8px 16px 0 16px; */
+    }
+    .productsfilter{
+        /* display: block;
+        position: static;
+        height: 150px; */
+        height: max-content;
+        position: absolute;
+        width: 100%;
+        color: black;  
+        z-index: 2;
+        background-color: white;
+    }
+    .productlist1{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .productlistfreeshiping{
+        margin-top: 10px;
+    }
+    .Filterheading p{
+        display: none;
+    }
+    .Filterheading{
+        padding: 4px 16px 6px 8px;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+    .mobilefilterbutton{
+        display: inline-block;
+    }
+}

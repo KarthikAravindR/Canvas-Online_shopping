@@ -1,0 +1,321 @@
+.canvas{
+    width: 100%;
+    margin-top: 70px;
+}
+.carouselwrap{
+    cursor: pointer;
+}
+.carousel{
+    width: 100%;
+    height: 400px;
+}
+.secondslidewrap{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    
+    background: linear-gradient(45deg,#ff4f58 0,#ff4f58 57%,#fd7048 100%);
+}
+.secondslidefirstwrap{
+    width: 70%;
+    height: 400px;
+    text-align: center;
+    font-size: 3rem;
+}
+.secondslidefirstwrapshoes{
+    margin-top: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.secondslidefirstwrapoff{
+    font-family: fantasy;
+}
+.secondslidefirstwrapexplore{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.secondslidesecondwrap{
+    width: 30%;
+    height: 400px;
+    position: relative;
+    
+}
+.secondslidesecondwrap img{
+    position: absolute;
+    top: 100px;
+}
+/* ?????????????????????????????????????????????? */
+.secondsslidewrap{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    color: white;
+    background-color: #373A44
+}
+.secondsslidefirstwrap{
+    width: 40%;
+    height: 400px;
+    text-align: center;
+    font-size: 3rem;
+}
+.secondsslidefirstwrapshoes{
+    margin-top: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.secondsslidefirstwrapoff{
+    font-family: fantasy;
+}
+.secondsslidefirstwrapexplore{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.secondsslidesecondwrap{
+    width: 60%;
+    height: 400px;    
+}
+
+.Brands{
+    width: 100%;
+    min-height: 400px;
+}
+.Brands p{
+    padding: 16px;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.allbrandflex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:0 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.eachbrandbox{
+    border: 1px solid #ccc;
+    width: 33%;
+    height: 80%;
+}
+.jumping{
+    height: 400px;
+}
+.jumping img{
+    background-size: inherit;
+    background-position: center;
+    background-repeat: repeat;
+    width:100%;
+    height: 100%;
+}
+.eachbrandboximg{
+    height: 80%;
+    width: 100%;
+}
+.eachbrandboxname{
+    text-align: center;
+    height: 80px;
+    line-height: 70px;
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.shoeimagewrap{
+  height: 400px;
+}
+
+/* COLORSSSSSSSSSSSSSSSSSSSS */
+.eachcolorboximg{
+    height: 80%;
+    width: 100%;
+}
+.eachcolorboximg img{
+    border-radius: 27px 27px 0 0;
+}
+.eachcolorboxname{
+    text-align: center;
+    height: 80px;
+    line-height: 70px;
+    font-size: 2.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.colors{
+    width: 99.9%;
+    margin: auto;
+    padding: 0 10px 30px 10px;
+    margin-top: 27px;
+    min-height: 400px;
+}
+.colors p{
+    padding: 16px;
+    font-size: 3rem;
+    text-align: center;
+    font-family: fantasy;
+}
+.allcolorflex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding:0 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.eachcolorbox{
+    border: 1px solid rgb(236, 238, 238);
+    border-radius: 27px;
+    /* box-shadow: 0 4px 8px 0 rgba(170, 169, 169, 0.2), 0 6px 20px 0 rgba(170, 169, 169, 0.2); */
+    width: 30%;
+    height: 80%;
+}
+
+#globalFooter {
+    padding-top: 105px;
+    padding-bottom: 65px;
+    padding-right: 65px;
+    padding-left: 65px;
+    height: 300px;
+    border-top: 1px solid rgb(134, 133, 133)
+    /* background-color: #15323a;
+    color: #fff; */
+  }
+  #globalFooter .col {
+    width: 50%;
+  }
+  #globalFooter p {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  #globalFooter .vline-div {
+    padding: 0 10px;
+  }
+  #globalFooter a {
+    /* color: #fff; */
+  }
+  #globalFooter a:after {
+    /* background-color: #fff; */
+  }
+  #globalFooter .social-links {
+    text-align: right;
+  }
+  #globalFooter .social-links li {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+  }
+  #globalFooter .social-links li ~ li {
+    margin-left: 22px;
+  }
+  #globalFooter .legal {
+    opacity: .4;
+    margin-top: 30px;
+  }
+  /*! - GLOBAL: 3a VIDEO */
+  #footer-video {
+    overflow: visible;
+    z-index: 1;
+  }
+  #footer-video .contentContainer {
+    z-index: 2;
+  }
+  #footer-video .video-box {
+    position: relative;
+  }
+  #footer-video .video-cta {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: justify;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -ms-flex-pack: center;
+    /* color: #fff; */
+    text-align: center;
+  }
+  #footer-video .video-cta .video-hover {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* background-color: rgba(21, 50, 58, 0.9); */
+  }
+  #footer-video .video-cta a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+  #footer-video h2 {
+    margin-top: 45px;
+    line-height: 1.1;
+    position: relative;
+  }
+  #footer-video h2 .uline {
+    position: relative;
+  }
+
+  @media (max-width: 850px) {
+    
+    .canvas{
+        margin-top: 111px;
+        
+    }
+}
+@media (max-width: 600px) {
+  .carousel{
+    height: 250px;
+}
+.shoeimagewrap{
+  height: 250px;
+}
+.secondslidewrap{
+    height: 250px;
+}
+.secondsslidewrap{
+    height: 250px;
+  }
+  .secondsslidesecondwrap,.secondsslidefirstwrap,.carousel-item.jumping.active{
+    height: 250px;
+}
+.secondslidefirstwrapshoes,.secondslidefirstwrapoff,.secondslidefirstwrapexplore,.secondsslidefirstwrapshoes.secondsslidefirstwrapoff,.secondsslidefirstwrapexplore{
+  font-size: 1.4rem;
+}
+.eachbrandbox{
+  width: 100%;
+  margin: 8px 0;
+}
+.eachcolorbox{
+  width: 100%;
+  margin: 8px 0;
+}
+.Brands {
+  text-align: center;
+}
+.Brands p{
+  padding: 16px 0 0 10px;
+  font-size: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#globalFooter {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-right: 45px;
+  padding-left: 45px;
+}
+}
